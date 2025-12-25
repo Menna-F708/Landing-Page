@@ -1,0 +1,251 @@
+/* 
+======================= 
+Tabels of Code
+1-RESET
+2-HEADER AND NAVBAR
+3-Glassphriom
+4-Hero Section
+=======================
+*/
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* ================= HEADER AND NAVBAR ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  margin: 1rem 0.5rem;
+}
+
+.logo,
+.hamburger {
+  padding: 1vh 2vw;
+}
+
+.logo img {
+  width: 12vw;
+  max-width: 9rem;
+  min-width: 5.5rem;
+  text-align: center;
+}
+
+/* ================= HAMBURGER ================= */
+
+.hamburger i {
+  font-size: 1.4rem;
+  text-align: center;
+  border-radius: 1vh;
+  transition: 0.3s;
+  z-index: 222;
+}
+
+nav {
+  position: fixed;
+  top: 10%;
+  right: -100%;
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(180deg, #000, #0f0f0f);
+  padding: 12vh 5vw;
+  transition: 0.4s ease-in-out;
+}
+
+nav.active {
+  right: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 5vh;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.3vh;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1vh;
+  width: 0%;
+  height: 0.3vh;
+  background-color: #aa14f0;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #aa14f0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+/* ================ Glassphriom ===================== */
+.bg-glow {
+  position: absolute;
+  top: -12vh;
+  right: 59vw;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(174, 35, 238, 0.911),
+    rgba(170, 20, 240, 0.15),
+    transparent 70%
+  );
+  filter: blur(8vh);
+  opacity: 0.9;
+  z-index: -1;
+}
+/* ============== Hero Section =============== */
+.hero-sec .img-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-sec .num-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.hero-sec .num-div .Artworks {
+  position: relative;
+  top: 9rem;
+  right: 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.hero-sec .num-div .Artworks h5{
+  font-size: 1.2rem;
+}
+
+.hero-sec .num-div .Artworks p{
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+.hero-sec .num-div .Artist {
+  position: relative;
+  top: 0.5rem;
+  right: 3rem;
+  text-align: left;
+}
+
+.hero-sec .num-div .Artist h5{
+  font-size: 1.2rem;
+}
+
+.hero-sec .num-div .Artist p{
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+.hero-sec .num-div .Aucation {
+  position: relative;
+  top: 5rem;
+  left: 1.6rem;
+    text-align: left;
+
+}
+.hero-sec .img-hero img {
+  width: 78vw;
+}
+.hero-sec .num-div .Aucation h5{
+  font-size: 1.2rem;
+}
+
+.hero-sec .num-div .Aucation p{
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+.text-div-hero-sec {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1rem;
+  width: 60%;
+  position: relative;
+  bottom: 8em;
+}
+
+.text-div-hero-sec h2 {
+  font-size: 1.7rem;
+}
+.text-div-hero-sec h2 span {
+  background: linear-gradient(90deg, #f86cf8 0%, #ac9ef6 51%, #64cef5 100%);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.text-div-hero-sec p {
+  font-size: 0.89rem;
+  line-height: 1.2rem;
+}
+
+.btns-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: nowrap;
+}
+
+.btns-div button {
+  padding: 1.6vh 4vw;
+  min-width: 30vw;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.btns-div .get {
+  background: linear-gradient(90deg, #d10ed1 0%, #844ad5 40%, #10a3da 100%);
+}
+
+.btns-div .explore {
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, #d10ed1 0%, #844ad5 40%, #10a3da 100%) border-box;
+  margin-left: 0.8rem;
+  border: 1px solid transparent;
+}

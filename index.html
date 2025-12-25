@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <!-- Header and Navbar-->
+    <header>
+      <div class="logo">
+        <img src="./img/MetaV.png" alt="Logo" />
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header and Navbar -->
+
+
+<!-- Glassphriom -->
+    <section class="hero-bacground-Glass">
+      <div class="bg-glow"></div>
+    </section>
+<!-- End Glassphriom -->
+
+
+<!-- Hero Section -->
+    <section class="hero-sec">
+      <div class="num-div">
+        <div class="Artworks">
+          <h5>29k +</h5>
+          <p>Artworks</p>
+        </div>
+
+        <div class="Artist">
+          <h5>18k +</h5>
+          <p>Artist</p>
+        </div>
+
+        <div class="Aucation">
+          <h5>25k +</h5>
+          <p>Aucation</p>
+        </div>
+      </div>
+
+      <div class="img-hero">
+        <img src="./img/Group 48095504.png" />
+      </div>
+
+      <div class="text-div-hero-sec">
+        <h2>Explore the future of the <span> Metaverse</span></h2>
+        <p>Let's explore and create your experience with metaverse.</p>
+        <div class="btns-div">
+          <button class="get">Get Started</button>
+          <button class="explore">Explore Now</button>
+        </div>
+      </div>
+    </section>
+<!--End Hero Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
