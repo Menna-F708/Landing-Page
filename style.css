@@ -171,6 +171,7 @@ nav ul li a:hover::after {
 
 .hero-text h2 {
   font-size: 1.7rem;
+  width: 100%;
 }
 .hero-text h2 span {
   background: linear-gradient(90deg, #f86cf8 0%, #ac9ef6 51%, #64cef5 100%);
