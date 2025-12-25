@@ -82,7 +82,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 2.3vh;
+  font-size: 1.1rem;
   position: relative;
   transition: 0.3s;
 }
@@ -125,89 +125,54 @@ nav ul li a:hover::after {
   z-index: -1;
 }
 /* ============== Hero Section =============== */
-.hero-sec .img-hero {
+.hero .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.hero .hero-image img {
+  width: 100vw;
+}
 
-.hero-sec .num-div {
+.hero .hero-container {
+  position: relative;
+  bottom: 10em;
+}
+.hero .hero-stats {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
-  gap: 5rem;
+  margin-top: 2rem;
 }
-
-.hero-sec .num-div .Artworks {
-  position: relative;
-  top: 9rem;
-  right: 1rem;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.hero-sec .num-div .Artworks h5{
-  font-size: 1.2rem;
-}
-
-.hero-sec .num-div .Artworks p{
-  font-size: 0.8rem;
-  font-weight: normal;
-  margin-top: 0.3rem;
-}
-.hero-sec .num-div .Artist {
-  position: relative;
-  top: 0.5rem;
-  right: 3rem;
-  text-align: left;
-}
-
-.hero-sec .num-div .Artist h5{
-  font-size: 1.2rem;
-}
-
-.hero-sec .num-div .Artist p{
-  font-size: 0.8rem;
-  font-weight: normal;
-  margin-top: 0.3rem;
-}
-.hero-sec .num-div .Aucation {
-  position: relative;
-  top: 5rem;
-  left: 1.6rem;
-    text-align: left;
-
-}
-.hero-sec .img-hero img {
-  width: 78vw;
-}
-.hero-sec .num-div .Aucation h5{
-  font-size: 1.2rem;
-}
-
-.hero-sec .num-div .Aucation p{
-  font-size: 0.8rem;
-  font-weight: normal;
-  margin-top: 0.3rem;
-}
-.text-div-hero-sec {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
+.hero .stat {
   flex-direction: column;
-  margin: 0 auto;
-  gap: 1rem;
-  width: 60%;
-  position: relative;
-  bottom: 8em;
 }
 
-.text-div-hero-sec h2 {
+.hero .hero-stats h5 {
+  font-size: 1.1rem;
+}
+
+.hero .hero-stats p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+
+.hero .hero-container .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  gap: 0.9rem;
+}
+
+.hero-text h2 {
   font-size: 1.7rem;
 }
-.text-div-hero-sec h2 span {
+.hero-text h2 span {
   background: linear-gradient(90deg, #f86cf8 0%, #ac9ef6 51%, #64cef5 100%);
 
   -webkit-background-clip: text;
@@ -216,34 +181,27 @@ nav ul li a:hover::after {
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-.text-div-hero-sec p {
+.hero-text p {
   font-size: 0.89rem;
-  line-height: 1.2rem;
+  line-height: 1.1rem;
 }
 
-.btns-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  flex-wrap: nowrap;
+.hero-buttons {
+  min-width: 80vw;
 }
-
-.btns-div button {
-  padding: 1.6vh 4vw;
-  min-width: 30vw;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  color: white;
-  cursor: pointer;
+.hero-buttons .btn {
   border: none;
+  color: white;
+  width: 25vw;
+  height: 5vh;
+  border-radius: 5px;
 }
 
-.btns-div .get {
+.hero-buttons .primary {
   background: linear-gradient(90deg, #d10ed1 0%, #844ad5 40%, #10a3da 100%);
 }
 
-.btns-div .explore {
+.hero-buttons .outline {
   background: linear-gradient(#000, #000) padding-box,
     linear-gradient(90deg, #d10ed1 0%, #844ad5 40%, #10a3da 100%) border-box;
   margin-left: 0.8rem;
