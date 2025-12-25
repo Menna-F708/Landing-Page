@@ -165,12 +165,13 @@ nav ul li a:hover::after {
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
+  width: 65%;
   gap: 0.9rem;
 }
 
 .hero-text h2 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
   width: 100%;
 }
 .hero-text h2 span {
